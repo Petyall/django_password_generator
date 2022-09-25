@@ -1,0 +1,8 @@
+
+
+<form action="{% url 'check' %}" method="post">
+    {% csrf_token %}
+    <label for="password">Ваш пароль </label>
+    <input id="password" type="text" name="password">
+    <input type="submit" value="OK">
+</form>
