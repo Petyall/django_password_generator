@@ -33,6 +33,13 @@
     <input type="checkbox" name="special"> Специальные символы
 </br>
 
+<br>
+
+{% csrf_token %}
+<label for="word">Слово </label>
+<input id="word" type="text" name="word">
+</br>
+
     <!-- Создание кнопки -->
     <input type="submit", value="Создать", class="btn btn-primary">
 

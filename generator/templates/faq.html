@@ -1,8 +1,21 @@
+<center>
+<div>
+<h1>Здесь находится статья о том какой пароль безопасный и список слитых.</h1> 
+<br><br><br><br>
+</div>
 
+<div>
+    <h2>Узнать насколько безопасный ваш пароль</h2>
+    <form action="{% url 'check' %}" method="post">
+        {% csrf_token %}
+        <label for="password">Ваш пароль </label>
+        <input id="password" type="text" name="password">
+        <input type="submit" value="Проверить">
+    </form>
+</div>
 
-<form action="{% url 'check' %}" method="post">
-    {% csrf_token %}
-    <label for="password">Ваш пароль </label>
-    <input id="password" type="text" name="password">
-    <input type="submit" value="OK">
-</form>
+<div>
+    <br><br><br><br>
+    <a href="{% url 'home' %}" class = "btn btn-warning">Вернуться назад</a>
+</div>
+</center>
